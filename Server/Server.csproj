@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lidgren.Network" Version="1.0.2" />
+    <Compile Include="../Common/*.cs" />
+    <PackageReference Include="ScottPlot" Version="5.0.55" />
+    <PackageReference Include="System.Management" Version="7.0.2" />
+    <PackageReference Include="System.Text.Json" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>../Ref/UnityEngine.CoreModule.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>../Ref/UnityEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>../Ref/Assembly-CSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>../Ref/Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>../Ref/UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>../Ref/UnityEngine.UIModule.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>../Ref/UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>../Ref/UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+
+    <!-- ? The following DLLs cause warnings on build -->
+    <Reference Remove="**/System.IO.Compression.dll" />
+    <Reference Remove="**/System.Net.Http.dll" />
+    <Reference Remove="**/Firebase.*.dll" />
+    <Reference Remove="**/Unity.Compat.dll" />
+    <Reference Remove="**/Unity.Tasks.dll" />
+  </ItemGroup>
+
+</Project>
