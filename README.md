@@ -46,9 +46,10 @@
     - `maxConnections`: 最大同时在线玩家数 (默认: 16)
     - `blockDuplicatePlayerNames`: 是否禁止重复用户名 (默认: false)
     - `updateRocketsPeriod`: 火箭状态更新频率(毫秒) (默认: 20)
-    - `loadRange`: 火箭加载范围，建议大于6000 (默认: 7500)
+    - `loadRange`: 加载范围 (默认: 7500)
     - `chatMessageCooldown`: 聊天消息发送间隔(秒) (默认: 3)
     - `difficulty`: 游戏难度 (0=普通,1=困难,2=真实) (默认: 0)
+    - `includeChatInSync`: 发送世界消息时是否附带chatMessageCooldown字段，(默认: false)
   - 添加-n参数可在修改后不重启服务器
 
 ### 系统消息
